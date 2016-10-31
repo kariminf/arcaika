@@ -1,0 +1,41 @@
+ |==================================================================|
+ |                                                                  |
+ |     **********dbase 3+ ;program karime************               |
+ |==================================================================|
+ 
+        écriture de bloc note karime      08:35 07/01/2006       
+ ******************************************************
+ Départ de ce program : VENDREDI 30 DECEMBRE 2005
+ 
+ fin  de ce program   : VENDREDI 06 JANVIER  2006
+ 
+ producteur           : ARIES ABD ELKARIME   
+ ******************************************************
+ . do tp_si\karime 
+********************************************************
+
+ libraire: pour la gestion des libraires:
+ *********insertion:insirer un nouveau au bibliothèque
+          modification:modifier son droit et adresse
+          affichage: affiche tous les clients trier par nom                    recherche:recherche par nom
+          suppression:pour les supprimer
+
+ATTENTION!:lorsque vous supprimer un client a des empraints non            rendre ;ces empraints vont dimunier si l'occurence 
+           supperieur à ,et ils vont supprimer s'il égale à 1
+
+  livre :pour la gestion des empraints
+  ******insertion:insirer les livres
+        modification:modifier l'occurence + ou -
+ATTENTION:si l'occurence égale à 0 c'est un suppression!
+        affichage:de tous les livres
+
+  pret:pour gestion des prets
+  ***** prendre un livre:pour le pret ;le systèm va mettre la
+                         date automatiquement
+        affichage:afficher les prets de 3 mois des livre et aussi
+                  des clients non supprimer seulement
+  a propos: les informations de producteur
+  ********
+  fin :pour sortir de logitiel
+  ****
+     ARIES ABD ELKARIME              

@@ -1,0 +1,9 @@
+ARIES Abd elkarim.
+
+classe    : 4ième année génie informatique.
+Année     : 2007-2008.
+Module    : MOD-sim.
+Prof      : MELLIT Ali.
+objectif  : des simulations.
+Langage   : Pascal.
+note      :  il ne fonctionne pas bien.

@@ -1,0 +1,10 @@
+ARIES Abd elkarim.
+
+classe  : 3ième année génie informatique.
+Année   : 2006-2007.
+Module  : base de données.
+Prof    : Djaoui Chafika.
+objectif: la gestion d'une classe (3ième informatique)
+	  :inscriptions,consultation ...etc.
+Langage : visual basic 6 et SQL.
+note    : fonctionne mais pas très bien.

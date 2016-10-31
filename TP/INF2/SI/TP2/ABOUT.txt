@@ -1,0 +1,9 @@
+ARIES Abd elkarim.
+
+classe    : 2ième année génie informatique.
+Année     : 2005-2006.
+Module    : system d'information.
+Prof      : LEMOUARI Ali.
+objectif  : faire un programme qui gestionne une zoo.
+Langage   : clipper.
+note      : ne fonctionne pas bien.

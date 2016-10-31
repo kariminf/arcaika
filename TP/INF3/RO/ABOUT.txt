@@ -1,0 +1,10 @@
+ARIES Abd elkarim.
+
+classe  : 3ième année génie informatique.
+Année   : 2006-2007.
+Module  : recherche operationnel.
+Prof    : LATER Az-eddine.
+objectif: résoudre des problèmes par la méthode
+	  de simplex.
+Langage : visual basic.
+note    : ne fonctionne pas très bien.

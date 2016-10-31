@@ -1,0 +1,9 @@
+ARIES Abd elkarim.
+
+classe    : 3ième année génie informatique.
+Année     : 2006-2007.
+Module    : Archetecture  II.
+Prof      : DJAB ELKHIR Assia.
+objectif  : Simulation de MIC 1.
+Langage   : C.
+note      :  il fonctionne très bien.

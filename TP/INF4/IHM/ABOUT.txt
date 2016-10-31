@@ -1,0 +1,11 @@
+ARIES Abd elkarim.
+ELADJROUD Meziane.
+BRIGHAN Mouaadh.
+
+classe    : 4ième année génie informatique.
+Année     : 2007-2008.
+Module    : IHM.
+Prof      : BOUKRAA DHO-ELKIFLI.
+objectif  : Gestion d'un hotel sur Web.
+Langage   : Php-MySQL.
+note      :  il ne fonctionne pas bien.

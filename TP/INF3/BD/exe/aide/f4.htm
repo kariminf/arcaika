@@ -1,0 +1,142 @@
+<html>
+<head><title>f2</title></head>
+<body bgcolor=#a0a0ff>
+
+
+<table width=100% align=left>
+
+<tr >
+<td bgcolor=green >
+<b>Les fichiers</b>
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+
+<p>
+<h3><b>Prj.vbp</b><br></h3>
+C'est le projet qui cr&eacute;e notre exécutable(logiciel).
+<dl>
+<dt><b>f1.frm</b></dt>
+<dd>C'est la forme de demande de sortir "fermer le logiciel".</dd>
+
+<dt><b>f3.frm</b></dt>
+<dd>C'est la forme "modification des &eacute;tudiants".</dd>
+
+<dt><b>about.frm</b></dt>
+<dd>C'est la forme "A propos".</dd>
+
+<dt><b>m1.bas</b></dt>
+<dd>C'est un module (unit&eacute;) il sert pour la cr&eacute;ation
+des formes coup&eacute;s &agrave; l'aide de <i>GDI32.DLL
+(Grapgics Device Interface)</i>.</dd>
+
+<dt><b>m2.bas</b></dt>
+<dd>C'est un module contient tous les requ&ecirc;tes.</dd>
+
+<dt><b>f2.frm</b></dt>
+<dd>C'est la forme principale.</dd>
+
+<dt><b>ac.frm</b></dt>
+<dd>C'est la forme qui donne l'&eacute;cran d'acceuil.</dd>
+
+
+</dl>
+
+
+</td>
+</tr>
+
+<tr >
+<td bgcolor=green >
+<b>Les requ&ecirc;tes</b>
+</td>
+</tr>
+<tr>
+<td valign=top>
+
+<br>db est une base de donn&eacute;es
+<br>rs est une table
+
+<p><b>ins_etudiant</b><br>
+
+<br>query de type "String"
+<br>query = "insert into ETUDIANT "
+<br>query = query + "(num_e , nom_e , pre_e , age_e , adr_e)"
+<br>query = query + " values (" & num & ",'" & nom & "','" & pre & "'," & age & ",'" & adr & "')"
+<br>db.Execute query
+
+<p><b>sup_etudiant</b>
+
+<br>query de type  "String"
+<br>'suppression de l'etudiant
+<br>query = "delete from etudiant "
+<br>query = query + "where num_e = " & num
+<br>db.Execute query
+<br>'suppression de ses notes
+<br>query = "delete from examen "
+<br>query = query + "where num_e = " & num
+<br>db.Execute query
+
+
+<p><b>mod_etudiant</b>
+<br>query de type  "String"
+<br>query = "update ETUDIANT "
+<br>query = query + " set nom_e= '" & nom & "',pre_e= '" & pre & "',age_e=" & age & ",adr_e= '" & adr & "' "
+<br>query = query + " where num_e = " & num
+<br>db.Execute query
+
+<p><b>aff_etudiant</b>
+<br>Set rs = db.OpenRecordset("select * from etudiant order by NOM_E,PRE_E", dbOpenSnapshot)
+
+<p><b>aff_etudiant2</b>
+<br>query de type  "String"
+<br>query = "select num_e,nom_e,pre_e from etudiant "
+<br>query = query & " where num_e in "
+<br>query = query & " ( select distinct num_e from examen )"
+<br>query = query & "  order by NOM_E,PRE_E"
+<br>Set rs = db.OpenRecordset(query, dbOpenSnapshot)
+
+<p><b>num_etudiant</b>
+<Br>Set rs = db.OpenRecordset("select NUM_E from etudiant order by NUM_E asc", dbOpenSnapshot)
+
+<p><b> rech_etudiat</b>
+<br>Set rs = db.OpenRecordset("select * from etudiant where NUM_E= " & num, dbOpenSnapshot)
+
+<p><b>etud_a_note</b>
+<br>query de type  "String"
+<br>query = "select nom_m , coe_m , tp , ctrl1 , ctrl2 , (tp+ctrl1+ctrl2)/3 as moy"
+<br>query = query & " from examen e , module m "
+<br>query = query & " where NUM_E= " & num & "  and  e.cod_m=m.cod_m"
+<br>query = query & " order by nom_m "
+<br>Set rs = db.OpenRecordset(query, dbOpenSnapshot)
+
+<p><b>rech_note</b>
+<br>Set rs = db.OpenRecordset("select * from examen where NUM_E = " & num & " AND COD_M = " & code, dbOpenSnapshot)
+
+<p><b>aff_module</b>
+<br>Set rs = db.OpenRecordset("select * from module", dbOpenSnapshot)
+
+<p><b>ins_examen</b>
+<br>query de type  "String"
+<br>query = "insert into EXAMEN "
+<br>query = query + " (num_e , cod_m , tp , ctrl1 , ctrl2 )"
+<br>query = query + " values (" & num & "," & code & "," & ntp & "," & n1 & "," & n2 & ")"
+<br>db.Execute query
+
+<p><b>mod_examen</b>
+
+<br>query de type  "String"
+<br>query = "update EXAMEN set "
+<br>query = query + "tp= " & ntp & ",ctrl1= " & n1 & ",ctrl2=" & n2
+<br>query = query + " where num_e = " & num & " and cod_m= " & code
+<br>db.Execute query
+
+<!------------------------------------------------->
+</td>
+</tr>
+</table>
+<body>
+</html>
+

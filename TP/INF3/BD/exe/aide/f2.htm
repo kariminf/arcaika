@@ -1,0 +1,91 @@
+<html>
+<head><title>f2</title></head>
+<body bgcolor=#a0a0ff>
+
+
+<table width=100% align=left>
+
+<tr >
+<td bgcolor=green >
+<b>Le contenu du logiciel</b>
+</td>
+</tr>
+<tr>
+<td>
+<img src="img\i0.jpg" width=400>
+</td>
+</tr>
+<tr>
+<td valign=top>
+Le logiciel est un <b>"Tp"</b>, il est orient&eacute; vers <b> "La gestion bidagogique d'une
+universit&eacute;"</b> 
+<p>
+<!------------------Les pointiés--------------------->
+<ul> 
+<li>
+Inscription des &eacute;tudiants dans une ann&eacute;e universitaire.
+</li>
+
+<li>
+Suivre des modules, chaque module a un code et un co&eacute;fficient, chaque un
+obtient deux notes d'examen et une note de TP par module.  
+</li>
+
+</ul>
+<p>Ici ce logiciel est consist&eacute; par l'&eacute;tablissement de
+la d&eacute;lib&eacute;ration d'une ann&eacute;e (par exemple 
+la 3<sup>i&egrave;me</sup> ann&eacute;e g&eacutenie informatique). 
+</td>
+</tr>
+<tr>
+<td bgcolor=green>
+<b>Le but de ce TP</b> 
+</td>
+</tr>
+<tr>
+<td>
+<p> Le but est d'utiliser le language <b>SQL</b> dans un vrai projet
+et voir comment il fonctionne.
+<br>on donne un example:
+<font color=red><b>
+<blockquote>
+insert into ETUDIANT <br>(num_e , nom_e , pre_e , age_e , adr_e)
+<br>values (un numero,'un nom','un prenom',age,'une adresse')
+</blockquote></b></font>
+<p>Ce programme fait l'insertion dant la table ETUDIANT
+des informations concern&eacute;es par un &eacute;tudiant: num&eacute;ro
+, nom, pr&eacute;nom, l'age et l'adresse.
+</td>
+<tr>
+<tr>
+<td bgcolor=green>
+<b>Le langage utilis&eacute;</b>
+</td>
+</tr>
+<tr>
+<td>
+<p>Le language utilis&eacute; est: <b>"Microsoft visual basic"</b>.
+<br>Comme La majorit&eacute; des langages le <b>visual basic</b>
+utilise aussi l'<b>SQL</b>; et la cause de choisir ce langage est
+&ccedil;a facilit&eacute; de manipulation.Voici une procedure qui
+utilise la req&ecirc;te pr&eacute;c&eacute;dente. 
+<p>
+<font color=red><b>
+Sub ins_etudiant(ByVal num As Integer, ByVal nom As String, ByVal pre As String, ByVal age As Integer, ByVal adr As String)
+<br>
+<br>Dim query As String
+<br>query = "insert into ETUDIANT "
+<br>query = query + "(num_e , nom_e "
+<br>query = query + ", pre_e , age_e , adr_e)"
+<br>query = query + " values (" & num & ",'" 
+<br>query = query & nom & "','" & pre & "'," 
+<br>query = query & age & ",'" & adr & "')"
+<br>db.Execute query
+<br>End Sub
+</font>  
+</td>
+</tr>
+</table>
+<body>
+</html>
+

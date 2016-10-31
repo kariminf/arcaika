@@ -1,0 +1,10 @@
+ARIES Abd elkarim.
+
+classe    : 4ième année génie informatique.
+Année     : 2007-2008.
+Module    : Compilation.
+Prof      : RAMDANE KIRADA Widad.
+objectif  : partie1: Les grammaires.
+	partie2: Un compilateur.
+Langage   : Pascal.
+note      :  il ne fonctionne pas bien.

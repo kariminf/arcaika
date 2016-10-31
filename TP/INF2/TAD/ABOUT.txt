@@ -1,0 +1,9 @@
+ARIES Abd elkarim.
+
+classe    : 2ième année génie informatique.
+Année     : 2005-2006.
+Module    : TAD.
+Prof      : LATER Azz-eddine.
+objectif  : Postfixé et résolution d'une expression.
+Langage   : Pascal.
+note      :  il fonctionne très bien.
