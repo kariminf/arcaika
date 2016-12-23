@@ -26,6 +26,8 @@ Contains my 3rd grade homeworks including:
 **INF4:** 
 Contains my 4th grade homeworks including:
 - COMP (compilation) homework which contains two parts: **part1** a program with Pascal to edit production rules of a grammar, verify if it is type 2, give an equivalent grammar proper without left recursion, give the Chomsky NF and Greibach NF; The program is using Pascal. **part2** propose a proggramming language of your own, write a compiler to it (syntactic and semantic verification, then generation), The program is uncomplete (no generation phase), but can do the syntactic and semantic verification; It is written using Pascal.
+- IHM (Human machine interface) homework which is a website to manage a hotel using PHP and MySQL.
+- MOD-SIM (modulation, simulation) homework which is the programming of some simulations: simulation of arrivals to cash registers, etc. Programed using Pascal : and they don't work (I got 0 on them :( as I remember ).
 
-**K-java-applet**
+## K-java-applet
 Some Java applets that can draw shapes using mathematical functions. I translated these functions from codes of Apple Basic found in an old mathematic book
