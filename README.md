@@ -24,6 +24,8 @@ Contains my 3rd grade homeworks including:
 - RO (operational research; operational analysis) homework which is a program using simplex method using VB6. 
 
 **INF4:** 
-Contains my 4rd grade homeworks including:
-- COMP (compilation) homework which contains two parts: **part1** a program with Pascal to input 
+Contains my 4th grade homeworks including:
+- COMP (compilation) homework which contains two parts: **part1** a program with Pascal to edit production rules of a grammar, verify if it is type 2, give an equivalent grammar proper without left recursion, give the Chomsky NF and Greibach NF; The program is using Pascal. **part2** propose a proggramming language of your own, write a compiler to it (syntactic and semantic verification, then generation), The program is uncomplete (no generation phase), but can do the syntactic and semantic verification; It is written using Pascal.
 
+**K-java-applet**
+Some Java applets that can draw shapes using mathematical functions. I translated these functions from codes of Apple Basic found in an old mathematic book
