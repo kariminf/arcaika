@@ -9,7 +9,7 @@ This folder contains codes with VB.net to handle some little issues with Japanes
 - Conversion between Hiragana and Katakana
 The test of these modules is written using Asp.net.
 
-## TP
+## Academic
 This folder contains some of my Practical works (Homeworks) back when I was a student. 
 
 **INF2:** 
