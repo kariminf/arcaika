@@ -99,3 +99,6 @@ This is te language I prposed in BNF
 35) OPDA::= NOMBRE | IDENT | ( ARITH )
 36) OPDB::= [non ] ( LOGI ) | vrai | faux | [ non ] IDENT
 ```
+### Implementation
+
+It is implemented as a [recursive descent parser](https://en.wikipedia.org/wiki/Recursive_descent_parser) using Pascal
